@@ -1,0 +1,9 @@
+{
+  "anuppuccin-theme-settings-extended@@anp-theme-ext-dark": true,
+  "anuppuccin-theme-settings-extended@@catppuccin-theme-extended": "ctp-luminescence-light",
+  "anuppuccin-theme-settings-extended@@catppuccin-theme-dark-extended": "ctp-everforest-dark",
+  "anuppuccin-theme-settings@@anuppuccin-theme-accents": "ctp-accent-lavender",
+  "anuppuccin-theme-settings@@anp-active-line": "anp-current-line-border-only",
+  "anuppuccin-theme-settings@@anp-header-color-toggle": true,
+  "anuppuccin-theme-settings@@anp-decoration-toggle": true
+}

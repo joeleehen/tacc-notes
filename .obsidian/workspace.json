@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "8a265fd8078ab18d",
+    "type": "split",
+    "children": [
+      {
+        "id": "5791e0126a074b54",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62206f5e02dbc318",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "intro/Batch Job Submission.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1a6a444d609317d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "intro/idev Sessions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d293209f563f0232",
+    "type": "split",
+    "children": [
+      {
+        "id": "e86e01b20ce88ee9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "52f0a96d9d68786d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "516240232110a174",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f860425ba7c4286b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f2ade9e0b62b7ff9",
+    "type": "split",
+    "children": [
+      {
+        "id": "9c5b0e649e8bb1dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fca6417a450064ac",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "intro/idev Sessions.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b535347c4effa8ae",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "intro/idev Sessions.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3dd3278497bfac8c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fb226b6a93ddf689",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "intro/idev Sessions.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "52f0a96d9d68786d",
+  "lastOpenFiles": [
+    "intro/Batch Job Submission.md",
+    "intro/idev Sessions.md",
+    "intro/HPC with Linux.md",
+    "img",
+    "img/Screenshot 2024-09-19 at 1.45.59 PM.png",
+    "Welcome.md",
+    "intro"
+  ]
+}
