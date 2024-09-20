@@ -19,6 +19,8 @@ TACCs Lonestar6 system.
 #SBATCH -n                # Total # of mpi tasks (should be 1 for serial)
 #SBATCH -t                # Run time (hh:mm:ss)
 #SBATCH -A                # Project/Allocation name (req'd if you have more than 1)
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=jlh7459@my.utexas.edu
 
 # Everything below here should be Linux commands
 ```
@@ -42,6 +44,8 @@ Here's the `job.slurm` file we've written for this example:
 #SBATCH -N 1
 #SBATCH -n 1
 #SBATCH -t 00:10:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=jlh7459@my.utexas.edu
 
 # everything below here should be linux commands
 echo "starting at:"

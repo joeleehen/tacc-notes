@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "intro/Batch Job Submission.md",
-                "mode": "source",
+                "file": "intro/HPC with Linux.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -26,13 +26,25 @@
               "type": "markdown",
               "state": {
                 "file": "intro/idev Sessions.md",
-                "mode": "source",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7af1327b5a837bab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "intro/Containers on High Performance Compute Clusters.md",
+                "mode": "preview",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "intro/idev Sessions.md",
+                "file": "intro/Containers on High Performance Compute Clusters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "intro/idev Sessions.md",
+                "file": "intro/Containers on High Performance Compute Clusters.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "intro/idev Sessions.md"
+                "file": "intro/Containers on High Performance Compute Clusters.md"
               }
             }
           }
@@ -159,11 +171,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52f0a96d9d68786d",
+  "active": "7af1327b5a837bab",
   "lastOpenFiles": [
     "intro/Batch Job Submission.md",
+    "intro/Containers on High Performance Compute Clusters.md",
     "intro/idev Sessions.md",
     "intro/HPC with Linux.md",
+    "intro/Docker Containers.md",
+    "Docker Container.md",
+    "img/Screenshot 2024-09-20 at 11.41.12 AM.png",
     "img",
     "img/Screenshot 2024-09-19 at 1.45.59 PM.png",
     "Welcome.md",

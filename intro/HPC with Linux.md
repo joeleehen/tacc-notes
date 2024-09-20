@@ -30,5 +30,5 @@ rsync -azv local remote
 rsync -azv remote local
 ```
 
-### Batch Job Submission
-We don't run applications on login nodes; the work is too resource-intensive and will interrupt what other people are doing. Instead, we write a **short text file** explaining the resources we need and the commands for running the application. We then submit that text file to a queue to run on compute nodes. This is called [[Batch Job Submission]]
+### [[Batch Job Submission]]
+We don't run applications on login nodes; the work is too resource-intensive and will interrupt what other people are doing. Instead, we write a **short text file** explaining the resources we need and the commands for running the application. We then submit that text file to a queue to run on compute nodes. 
