@@ -22,9 +22,7 @@ The `exec` command allows for passing commands as arguments within a container.
 | Apptainer                                | Docker                                                 |
 | ---------------------------------------- | ------------------------------------------------------ |
 | `apptainer  shell someguy.sif`           | `docker run --rm -it joeleehen/someguy:verNum`         |
-| `apptainer run someguy.sif`              | `docker run --rm joeleehen/someguy:verNum`             |
+| `apptainer run someguy_verNum.sif`       | `docker run --rm joeleehen/someguy:verNum`             |
 | `apptainer exec someguy.sif someCommand` | `docker run --rm joeleehen/someguy:verNum someCommand` |
 #note any weird docker errors (failed to get checksum, executable not recognized) are likely an error in your slurm/dockerfile. **Make sure** you have the correct **version number**.
 #note sometimes `apptainer run` will fix an "executable not found" error from `apptainer exec`
-# TODO mpi and gpu containers
-https://containers-at-tacc.readthedocs.io/en/latest/singularity/03.mpi_and_gpus.html
