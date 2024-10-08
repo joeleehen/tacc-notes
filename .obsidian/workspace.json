@@ -8,43 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "62206f5e02dbc318",
+            "id": "55968d8857e27423",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "intro/Batch Job Submission.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ba54b2e86a4c4350",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "intro/Message Passing Interface.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "29aedce45f27b7a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "intro/GPU Computing.md",
+                "file": "pansim/Meeting 2 10-8-24.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "intro/GPU Computing.md",
+                "file": "pansim/Meeting 2 10-8-24.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "intro/GPU Computing.md",
+                "file": "pansim/Meeting 2 10-8-24.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "intro/GPU Computing.md"
+                "file": "pansim/Meeting 2 10-8-24.md"
               }
             }
           }
@@ -171,16 +146,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "29aedce45f27b7a1",
+  "active": "52f0a96d9d68786d",
   "lastOpenFiles": [
-    "intro/Tapis.md",
+    "intro/HPC with Linux.md",
+    "pansim/Meeting 2 10-8-24.md",
+    "pansim",
+    "intro/Batch Job Submission.md",
+    "Untitled.canvas",
     "intro/GPU Computing.md",
+    "intro/Tapis.md",
     "intro/Docker Containers.md",
     "intro/Message Passing Interface.md",
     "intro/Containers on High Performance Compute Clusters.md",
     "intro/idev Sessions.md",
-    "intro/Batch Job Submission.md",
-    "intro/HPC with Linux.md",
     "img/Screenshot 2024-09-23 at 5.42.53 PM.png",
     "Docker Container.md",
     "img/Screenshot 2024-09-20 at 11.41.12 AM.png",
