@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Demo Notes.md",
+                "file": "pansim/Demo Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "f2ade9e0b62b7ff9",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Demo Notes.md",
+                "file": "pansim/Demo Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Demo Notes.md",
+                "file": "pansim/Demo Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Demo Notes.md"
+                "file": "pansim/Demo Notes.md"
               }
             }
           }
@@ -160,10 +159,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fd8788209a3085ac",
+  "active": "52f0a96d9d68786d",
   "lastOpenFiles": [
     "pansim/Meeting 2 10-8-24.md",
-    "Demo Notes.md",
+    "pansim/Demo Notes.md",
     "intro/HPC with Linux.md",
     "pansim",
     "intro/Batch Job Submission.md",
