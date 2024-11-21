@@ -6,6 +6,8 @@ Erik wants to review my and Magret's code before for our `pubScraper.py` app. We
 - Linters are essential! Erik recommend `ruff` for Python. I should figure out how to use this with neovim
 - We need to *test as we go!*
 
+I did wider-scope integration tests (mainly testing `get_publications_by_author`) rather than finer-grain unit testing. I wrote my tests to maximize my code coverage and got like 97% coverage.
+
 Here's a short script I wrote to pull publishing data from PubMed, searching by author name:
 ###### pubScraper/APIClasses/PubMed.py
 ```python
@@ -146,3 +148,6 @@ if __name__ == '__main__':
 ```
 ###### Feedback
 I'm currently missing docstrings, there aren't enough comments, and I have commented out blocks of code that looks sloppy.
+Here's Erik's comment after looking over what I wrote:
+*I've got lots of comments on logging, using config files, code structure, testing, and remote calls that it's probably easier to talk about them. Since this is the early days, there's no reason not to merge these in right now and then sit down and discuss.*
+$$\text{damn bruh I thought my shit looked good}$$
