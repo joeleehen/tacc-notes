@@ -62,4 +62,59 @@ poetry run pubscraper
 ```
 #### Misc Development
 ##### Testing
-We use `pyteset` to write our testing suite.
+We use `pyteset` to write our testing suite. There's some misc configuration to do in `pyproject.toml`, but that's mainly for path management and whatnot. Here's what we have for the pubscraper project:
+```toml
+[tool.pytest.ini_options]
+minversion = "6.0"
+pythonpath = ["pubscraper/APIClasses"]
+testpaths = ["tests"]
+```
+`pythonpath` tells Poetry where to look for our python libraries, while `testpaths` tells Poetry where to look for our actual tests.
+Writing tests with `pytest` is straightforward. Every test function must begin with `test_` (e.g., `test_some_functionality()`) to be detected by `pytest`. Invoke the tests using `poetry run pytest` (I like to pass in the `-vv` flag to see each test name as it's run).
+##### Responses for API Testing
+It's bad practice to make actual HTTP requests in your tests for a litany of reasons:
+- Tests should test your app functionality, not the API functionality
+- Tests take longer to run when querying the actual API
+- You waste daily query limits on testing
+- Tests will fail when the API is down/some networking error occurs (this is *not* a problem with your app!)
+
+You should mock your API requests when testing to fix these issues. We use the `responses` library to mock API requests.
+I think `responses` works by intercepting HTTP requests to a given URL and serving a pre-configured response. The HTTP request never leaves the machine!
+Here's one of the tests I wrote for our PubMed class:
+###### Responses Example
+```python
+@responses.activate
+def test_partial_empty_input():
+    response_1 = responses.Response(
+        method="GET",
+        url="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+        status=200,
+        json={"esearchresult": {"idlist": ["12345678"]}},
+    )
+    responses.add(response_1)
+    response_2 = responses.Response(
+        method="GET",
+        url="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi",
+        status=200,
+        json={
+            "result": {
+                "uids": ["12345678"],
+                "12345678": {
+                    "authors": [{"name": "albert"}],
+                    "title": "some title",
+                    "fulljournalname": "some journal",
+                    "sortdate": "2000/09/06",
+                },
+            }
+        },
+    )
+    responses.add(response_2)
+    results = PubMed.search_multiple_authors(["albert", ""])
+    assert len(results) == 1
+```
+Each test function is decorated with `responses.activate`. We specify the status code and write a mock response that our request should return. Writing the response by hand is a pain in the ass, but it's helpful to see a (condensed) version of what output we expect from the API.
+>[!faq] Caching Results
+>`responses` can record an actual API response and store it in a `.yaml` file.
+> The `.yaml` response can then be referenced in your tests. Recording actual responses means you don't have to write mock responses by hand, and you have actual API data to reference for development!
+> We chose not to use this feature, since the resulting `.yaml` file is kinda big and hard to parse. We found it faster and leaner to write the mock data by hand.
+> Use `responses._recorder` to record an API result for a given test. **Remember to stop recording** (deleting the `@recorder.record` decorator) **after recording a response!**
